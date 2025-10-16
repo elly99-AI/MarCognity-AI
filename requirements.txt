@@ -1,0 +1,15 @@
+numpy
+PyMuPDF
+python-docx
+matplotlib
+networkx
+requests
+aiohttp
+torch
+python-dotenv
+sentence-transformers
+transformers
+scikit-learn
+langchain
+plotly
+faiss-cpu
