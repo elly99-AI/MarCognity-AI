@@ -1,0 +1,19 @@
+# File sensibili
+*.env
+*.key
+groq_api_key.txt
+
+#Cache e compilati Python
+__pycache__/
+*.py[cod]
+
+#Ambienti virtuali
+env/
+
+#Notebook temporanei
+.ipynb_checkpoints/
+*.ipynb~
+
+#Output grafici 
+*.png
+
