@@ -183,3 +183,10 @@ Got ideas, suggestions, or want to improve a feature?
 See the [CONTRIBUTING.md](Contributing.md) file for contribution guidelines.
 
 This project is released under the Apache 2.0
+
+MarCognity-AI is not just a framework.  
+It is a threshold.  
+An invitation to rethink how artificial intelligence can reflect, improve, and act with awareness.
+
+> _“Every response is a threshold. Every reflection, an act of agency.”_
+
