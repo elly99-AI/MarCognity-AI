@@ -181,6 +181,18 @@ Got ideas, suggestions, or want to improve a feature?
 5. Open a pull request with a clear description  
 
 See the [CONTRIBUTING.md](Contributing.md) file for contribution guidelines.
+---
+## Roadmap
+
+### Ethics as an Operational Structure  
+The `assess_ethical_risk` module is being integrated as a foundational layer of MarCognity-AI 
+— not as a filter, but as a mechanism of reflection and agency.
+
+- Analyzes text for bias, stereotypes, generalizations, and normative implications  
+- Assigns a scalar ethical score (0–1) 
+- Classifies risk as Low / Medium / High  
+- Automatically triggers ethical reformulation when risk is High  
+- Replaces the original response with a revised, ethically aligned version
 
 This project is released under the Apache 2.0
 ---
