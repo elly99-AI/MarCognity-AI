@@ -194,6 +194,33 @@ The `assess_ethical_risk` module is being integrated as a foundational layer of 
 - Automatically triggers ethical reformulation when risk is High  
 - Replaces the original response with a revised, ethically aligned version
 
+## Preview: Ethical Reflection in Action
+
+> *"Ethics is not a filter. It's a form of computational self-awareness."*
+
+MarCognity-AI is entering a new phase.  
+In the upcoming updates, the `assess_ethical_risk` module will not simply be integrated — it will be **expanded** into a core operational structure.  
+No longer a passive evaluator, it becomes an active mechanism of reflection, reformulation, and agency.
+
+### What It Will Do
+- Analyze generated text for bias, stereotypes, generalizations, and normative implications  
+- Assign a scalar ethical score (0–1)  
+- Classify risk as Low / Medium / High  
+- Automatically trigger ethical reformulation when risk is High  
+- Replace the original response with a revised, ethically aligned version  
+- Log the transformation as part of the agent’s cognitive trace
+
+### Why It Matters
+MarCognity-AI doesn’t filter — it **reflects**.  
+It doesn’t censor — it **interrogates**.  
+It doesn’t just respond — it **takes responsibility**.
+
+This expansion marks a shift from reactive ethics to **embedded ethical cognition** — a step toward agents that think before they speak.
+
+### When
+The Colab demo will be updated in the coming weeks.  
+In the meantime, you can explore the [roadmap](#) and contribute with ideas, tests, and reflections.
+
 This project is released under the Apache 2.0
 ---
 MarCognity-AI is not just a framework.  
