@@ -112,3 +112,4 @@ ethical_check = assess_ethical_risk(output_ai)
 
 if ethical_check["revision_suggestion"]:
     print(f"Ethics: {ethical_check['revision_suggestion']}")
+
