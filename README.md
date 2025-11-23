@@ -73,6 +73,13 @@ You can explore the original threads and responses here:
 - Ethical analysis and cognitive filtering  
 - Reflective cognitive journal
 
+## Vision
+MarCognity‑AI is an open-source framework for reflective and transparent AI.  
+It integrates semantic memory, ethical auditing, and scientific validation to transform LLMs into metacognitive assistants.  
+
+👉 Read the full article: [MarCognity‑AI: A Metacognitive Framework](https://www.linkedin.com/pulse/marcognityai-metacognitive-framework-reflective-elena-marziali-aifzf/?trackingId=zmd04OPSR8Saewmny%2F0mTg%3D%3D)
+
+
 ---
 
 
