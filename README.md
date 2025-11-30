@@ -188,13 +188,17 @@ Got ideas, suggestions, or want to improve a feature?
 5. Open a pull request with a clear description  
 
 See the [CONTRIBUTING.md](Contributing.md) file for contribution guidelines.
+
 ---
 
-This project is released under the Apache 2.0
+## Contribute
+Contributions are welcome! If you have additional examples or improvements, please feel free to open a pull request or report an issue.
+
 ---
 MarCognity-AI is not just a framework.  
 It is a threshold.  
 An invitation to rethink how artificial intelligence can reflect, improve, and act with awareness.
+This project is released under the Apache 2.0
 
 > _“Every response is a threshold. Every reflection, an act of agency.”_
 
