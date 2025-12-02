@@ -48,7 +48,6 @@ MarCognity-AI has already sparked resonance across major AI communities.
 
 - **Google org** responded to the semantic mapping layer of MarCognity-AI, recognizing its unique contribution to reflective AI design.
 - **DeepSeek community** engaged with the framework, confirming its relevance in the orchestration of open-source agents.
-- **Hugging Face** users interacted with the project through threads and discussions, validating its metacognitive approach and inviting further collaboration.
 
 These interactions are not endorsements — they are **echoes of impact**, signs that MarCognity-AI is already part of the global conversation on ethical and transparent AI.
 
