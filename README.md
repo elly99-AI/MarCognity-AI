@@ -78,6 +78,16 @@ It integrates semantic memory, ethical auditing, and scientific validation to tr
 
 👉 Read the full article: [MarCognity‑AI: A Metacognitive Framework](https://www.linkedin.com/pulse/marcognityai-metacognitive-framework-reflective-elena-marziali-aifzf/?trackingId=zmd04OPSR8Saewmny%2F0mTg%3D%3D)
 
+### 📚 Official Publication and Citation
+
+The official version of the code and the full research paper have been permanently archived on Zenodo and are citable using their Digital Object Identifier (DOI).
+
+| **MarCognity-AI** | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17855185.svg)](https://doi.org/10.5281/zenodo.17855185) |
+|---|---|
+| **Permanent DOI** | `10.5281/zenodo.17855185` |
+| **Access Publication** | [Full Research Paper (PDF) & Code (Zenodo)](https://doi.org/10.5281/zenodo.17855185) |
+
+
 
 ---
 
