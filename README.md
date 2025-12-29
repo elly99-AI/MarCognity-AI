@@ -90,6 +90,12 @@ The official version of the code and the full research paper have been permanent
 
 
 ---
+## Limitations
+
+LLM‑based metacognition collapses at the same fault line: it confuses linguistic coherence with epistemic awareness.
+The model can say “this answer is unclear,” but not “I don’t know if what I’m saying is true.
+
+---
 
 
 ## Why Use It
