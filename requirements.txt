@@ -21,3 +21,5 @@ spacy
 pdfplumber
 PyPDF2
 python-docx
+PyMuPDF
+langdetect
