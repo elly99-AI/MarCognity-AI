@@ -96,6 +96,14 @@ LLM‑based metacognition collapses at the same fault line: it confuses linguist
 The model can say “this answer is unclear,” but not “I don’t know if what I’m saying is true.
 
 ---
+## Research Status
+MarCognity-AI is an exploratory research framework.
+It is not a production-ready system.
+Its purpose is to expose and study structural limits of LLM-based metacognition,
+particularly the collapse between linguistic coherence and epistemic awareness.
+
+---
+
 
 
 ## Why Use It
