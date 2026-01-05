@@ -103,7 +103,22 @@ Its purpose is to expose and study structural limits of LLM-based metacognition,
 particularly the collapse between linguistic coherence and epistemic awareness.
 
 ---
+## Observed Fracture
 
+During the development of MarCognity-AI, a recurring failure mode emerged:
+
+LLM-based metacognitive layers reliably optimize for linguistic coherence
+but fail to surface epistemic uncertainty as an explicit signal.
+
+The system can evaluate how an answer is written,
+yet cannot account for whether what is being said is actually known,
+verifiable, or admissible.
+
+This collapse between coherence and awareness
+is not treated here as a bug to be fixed,
+but as a structural fracture to be studied.
+
+---
 
 
 ## Why Use It
