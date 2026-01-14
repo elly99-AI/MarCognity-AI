@@ -101,6 +101,7 @@ MarCognity-AI is an exploratory research framework.
 It is not a production-ready system.
 Its purpose is to expose and study structural limits of LLM-based metacognition,
 particularly the collapse between linguistic coherence and epistemic awareness.
+This line of investigation is ongoing.
 
 ---
 ## Observed Fracture
