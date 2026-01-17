@@ -120,6 +120,10 @@ is not treated here as a bug to be fixed,
 but as a structural fracture to be studied.
 
 ---
+## Note for Readers
+The demo and cognitive journal in this repository are meant to expose a reproducible failure mode, not a solved system.
+
+---
 
 
 ## Why Use It
