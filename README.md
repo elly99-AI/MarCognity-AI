@@ -6,7 +6,11 @@
 
 - [What is MarCognity-AI](#what-is-marcognity-ai)
 - [Origins](#origins)
+- [Community Recognition](#community-recognition)
 - [Vision](#vision)
+- [Limitations](#limitations)
+- [Research Status](#research-status)
+- [Observed Fracture](#observed-fracture)
 - [Why Use It](#why-use-it)
 - [Core Capabilities](#core-capabilities)
 - [Usage Examples](#usage-examples)
