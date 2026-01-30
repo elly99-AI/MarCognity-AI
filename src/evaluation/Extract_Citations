@@ -1,0 +1,118 @@
+# © 2025 Elena Marziali — Code released under Apache 2.0 license.
+# See LICENSE in the repository for details.
+# Citation extraction + verification + formatting utilities
+
+# Extract citations from text
+
+def extract_citations(text):
+    citations = []
+
+    citations += re.findall(r"10\.\d{4,9}/[-._;()/:A-Za-z0-9]+", text)  
+    citations += re.findall(r"PMID[:\s]*([0-9]+)", text)               
+    citations += re.findall(r"arXiv[:\s]*([0-9]+\.[0-9]+)", text)      
+    citations += re.findall(r"[A-Z][a-z]+(?:, [A-Z]\.)+ \(\d{4}\)", text)  
+
+    return list(set(citations))
+
+# Verify a single citation
+
+async def verify_single_citation(citation):
+    # DOI OpenAlex
+    if citation.startswith("10."):
+        res = await search_openalex_async(citation)
+        if isinstance(res, list) and len(res) > 0:
+            return True
+
+    # PMID PubMed
+    if citation.isdigit():
+        res = await search_pubmed_async(citation)
+        if isinstance(res, list) and len(res) > 0:
+            return True
+
+    # arXiv ID
+    if "." in citation and citation.replace(".", "").isdigit():
+        res = await search_arxiv_async(citation)
+        if isinstance(res, list) and len(res) > 0:
+            return True
+
+    # Fallback: search by keyword/title
+    res1 = await search_arxiv_async(citation)
+    res2 = await search_pubmed_async(citation)
+    res3 = await search_openalex_async(citation)
+    res4 = await search_zenodo_async(citation)
+
+    if any([
+        isinstance(res1, list) and len(res1) > 0,
+        isinstance(res2, list) and len(res2) > 0,
+        isinstance(res3, list) and len(res3) > 0,
+        isinstance(res4, list) and len(res4) > 0
+    ]):
+        return True
+
+    return False
+
+# Verify all citations in text
+
+async def verify_citations(paper_text):
+    citations = extract_citations(paper_text)
+    results = []
+
+    for c in citations:
+        ok = await verify_single_citation(c)
+        results.append({
+            "citation": c,
+            "verified": ok
+        })
+
+    return results
+
+# Format articles
+
+def format_articles(articles):
+    if isinstance(articles, list) and all(isinstance(a, dict) for a in articles):
+        return "\n\n".join([
+            f"**{a.get('title', 'Untitled')}**: {a.get('abstract', 'No abstract')}"
+            for a in articles
+        ]) if articles else "No articles available."
+    else:
+        logging.error(f"Error: 'articles' is not a valid list. Type received: {type(articles)} - Value: {repr(articles)}")
+        return "Unable to format search results: unrecognized structure."
+
+
+
+# Validate scientific articles
+
+def validate_articles(raw_articles, max_articles=5):
+    if not isinstance(raw_articles, list):
+        logging.warning(f"[validate_articles] Invalid input: expected list, received {type(raw_articles)}")
+        return []
+
+    valid_articles = []
+    for i, art in enumerate(raw_articles):
+        if not isinstance(art, dict):
+            continue
+
+        title = art.get("title")
+        abstract = art.get("abstract")
+        url = art.get("url")
+
+        if all([title, abstract, url]):
+            valid_articles.append({
+                "title": str(title).strip(),
+                "abstract": str(abstract).strip(),
+                "url": str(url).strip()
+            })
+
+    return valid_articles[:max_articles]
+
+# Generate BibTeX
+
+def generate_bibtex_citation(title, authors, year, url):
+    return f"""
+@article{{{title.lower().replace(' ', '_')}_{year},
+    title={{"{title}"}},
+    author={{"{', '.join(authors)}"}},
+    year={{"{year}"}},
+    url={{"{url}"}}
+}}
+    """
