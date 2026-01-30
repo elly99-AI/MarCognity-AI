@@ -88,7 +88,7 @@ The official version of the code and the full research paper have been permanent
 
 | **MarCognity-AI** | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17855185.svg)](https://doi.org/10.5281/zenodo.17855185) |
 |---|---|
-| **Permanent DOI** | `10.5281/zenodo.17855185` |
+| **Permanent DOI** | `https://doi.org/10.5281/zenodo.18435049` |
 | **Access Publication** | [Full Research Paper (PDF) & Code (Zenodo)](https://doi.org/10.5281/zenodo.17855185) |
 
 
@@ -146,6 +146,9 @@ MarCognity isn’t just intelligent. It’s **aware**.
 ### 4. Reflective Cognitive Journal  
 Each response is accompanied by a detailed **metacognitive reflection**, saved in Markdown for analysis and reuse.
 
+## Epistemic Transparency
+The Skeptical Agent exposes unsupported claims through a structured verification report, making epistemic uncertainty explicit.
+
 ---
 
 ## Core Capabilities
@@ -158,6 +161,7 @@ Each response is accompanied by a detailed **metacognitive reflection**, saved i
 - Version archiving in FAISS memory  
 - Ethical risk and linguistic bias analysis  
 - Reflective cognitive journal with Markdown export
+- Epistemic Verification Layer (Skeptical Agent): decomposes responses into claims and checks them against sources
 
 ---
 
@@ -174,6 +178,18 @@ Each response is accompanied by a detailed **metacognitive reflection**, saved i
 ### Multidisciplinary Question  
 **Input:** “Compare the view of consciousness in philosophy and neuroscience.”  
 **Output:** Structured response + sources + cognitive visualization + reflective journal
+
+## Epistemic Verification Example
+Input: “Explain quantum entanglement.”
+Output:
+
+Generated response
+
+Claim-by-claim verification
+
+VERIFIED / EPISTEMIC FAILURE report
+
+Reasoning based on provided sources
 
 ---
 
@@ -213,14 +229,16 @@ It shows step-by-step how the agent generates, evaluates, and reflects on a resp
 
 ## Cognitive Architecture
 
-| Module                     | Function                                                  |
-|----------------------------|-----------------------------------------------------------|
-| Problem Classification     | Automatic recognition of input type                       |
-| Academic Prompting         | Structuring complex multidisciplinary queries             |
-| Scientific Retrieval       | Asynchronous querying of multiple open-access sources     |
-| Semantic Evaluation        | Response analysis with logical scoring                    |
-| FAISS Memory               | Archiving and comparison with past responses              |
-| Cognitive Visualization    | Uses HuggingFace’s transformers library and selected models for scientific content processing, ethical analysis, and cognitive representation |
+| Module                 | Function                                                                 |
+|------------------------|---------------------------------------------------------------------------|
+| Problem Classification | Automatic recognition of input type                                       |
+| Academic Prompting     | Structuring complex multidisciplinary queries                             |
+| Scientific Retrieval   | Asynchronous querying of multiple open‑access sources                     |
+| Semantic Evaluation    | Response analysis with logical and semantic scoring                       |
+| Skeptical Agent        | Sentence‑level claim verification against provided sources; flags unsupported statements and produces an epistemic report |
+| FAISS Memory           | Archiving and comparison with past responses, including reflective evaluations |
+| Cognitive Visualization| Scientific content processing, ethical analysis, and conceptual representation using selected transformer models |
+
 
 ---
 
