@@ -1,0 +1,28 @@
+
+# Task routing must be executed AFTER user input is collected
+# and BEFORE building the prompt template.
+
+def route_task(user_input):
+    text = user_input.lower()
+    if "review" in text:
+        return "review"
+    elif "summarize" in text:
+        return "summary"
+    elif "explain" in text:
+        return "explanation"
+    else:
+        return "generic"
+
+task = route_task(example_problem)
+
+if task == "review":
+    selected_template = review_prompt
+elif task == "summary":
+    selected_template = summary_prompt
+elif task == "explanation":
+    selected_template = explanation_prompt
+else:
+    selected_template = generic_prompt
+
+
+response = llm.invoke(prompt.strip())
