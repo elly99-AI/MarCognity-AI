@@ -89,7 +89,7 @@ The official version of the code and the full research paper have been permanent
 | **MarCognity-AI** | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17855185.svg)](https://doi.org/10.5281/zenodo.17855185) |
 |---|---|
 | **Permanent DOI** | `https://doi.org/10.5281/zenodo.18435049` |
-| **Access Publication** | [Full Research Paper (PDF) & Code (Zenodo)](https://doi.org/10.5281/zenodo.17855185) |
+| **Access Publication** | [Full Research Paper (PDF) & Code (Zenodo)](https://doi.org/10.5281/zenodo.18435049) |
 
 
 
@@ -146,7 +146,7 @@ MarCognity isn’t just intelligent. It’s **aware**.
 ### 4. Reflective Cognitive Journal  
 Each response is accompanied by a detailed **metacognitive reflection**, saved in Markdown for analysis and reuse.
 
-## Epistemic Transparency
+### 5. Epistemic Transparency
 The Skeptical Agent exposes unsupported claims through a structured verification report, making epistemic uncertainty explicit.
 
 ---
@@ -179,7 +179,7 @@ The Skeptical Agent exposes unsupported claims through a structured verification
 **Input:** “Compare the view of consciousness in philosophy and neuroscience.”  
 **Output:** Structured response + sources + cognitive visualization + reflective journal
 
-## Epistemic Verification Example
+### Epistemic Verification Example
 Input: “Explain quantum entanglement.”
 Output:
 
