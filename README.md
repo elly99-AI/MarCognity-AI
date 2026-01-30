@@ -1,5 +1,5 @@
 # MarCognity-AI  
-**The framework that teaches artificial intelligence how to think.**
+**A research framework for reflective and epistemically transparent AI systems**
 ---
 
 ## Table of Contents
@@ -46,7 +46,7 @@ MarCognity wasn’t born in a lab.
 It was born from a curious, free, and determined mind.
 
 ---
-## Community Recognition
+## Early Community Interactions (Non-Endorsement)
 
 MarCognity-AI has already sparked resonance across major AI communities.
 
