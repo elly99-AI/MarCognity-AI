@@ -26,7 +26,7 @@ def generate_objective_from_input(user_input):
         return "Objective generation failed."
 
 
-def metacognitive_cycle(question, level, max_iter=2):
+async def metacognitive_cycle(question, level, max_iter, context_docs):
     response = llm.invoke(question)
     response_text = extract_text_from_ai(response)
 
@@ -42,7 +42,31 @@ def metacognitive_cycle(question, level, max_iter=2):
         else:
             break
 
-    return response_text
+    # SKEPTICAL AGENT INTEGRATION
+    # The skeptic steps in now that the response is coherent
+    print("\n[Skeptical Agent] Analyzing epistemic traceability...")
+    skeptical_report = skeptical_agent(question, response_text, context_docs)
+
+    # Citation Verification (Bibliographic Cross-check) ---
+    verified_refs = await verify_citations(response_text)
+
+    # 3. Final Report Assembly
+    full_output = response_text
+    full_output += "\n\n" + "="*40
+    full_output += "\n## SKEPTICAL AGENT REPORT (Critical Analysis)\n"
+    full_output += skeptical_report                                                        #
+    full_output += "\n" + "="*40
+
+    full_output += "\n\n## VERIFIED BIBLIOGRAPHIC REFERENCES\n"
+    if verified_refs:
+        for r in verified_refs:
+            status = "verified" if r["verified"] else "unverified"
+            full_output += f"- {r['citation']} ({status})\n"
+    else:
+        full_output += "No citations found or verifiable in the text."
+
+    return full_output
+
 
 # Evaluate response with self-assessment and interactive improvement
 # Evaluates the response and reformulates it if poorly constructed
@@ -214,4 +238,5 @@ async def scientific_creativity_flow(concept, subject, language="en", level="adv
     return {
         "hypothesis": creative_hypothesis,
         "novelty": novelty_evaluation
+
     }
