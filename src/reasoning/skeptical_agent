@@ -1,0 +1,67 @@
+
+#This agent acts as a fact-checker that cross-references a response against source documents to identify hallucinations.
+#It systematically dismantles unsupported claims, labeling them as "epistemic failures" to ensure strict data reliability.
+
+def skeptical_agent(question: str, response: str, source_text: str) -> str:
+    """
+    Skeptical Agent: attacks the response and reports EPISTEMIC FAILURE
+    for claims not supported by the source documents.
+    Returns a structured text report.
+    """
+    if not isinstance(response, str) or not response.strip():
+        logging.warning("[skeptical_agent] Empty or invalid response.")
+        return "No response to analyze."
+
+    if not isinstance(source_text, str) or not source_text.strip():
+        logging.warning("[skeptical_agent] No source document provided.")
+        # In this case, the agent can only state that everything is epistemically uncertain
+        return "No documents provided: the entire response is in a state of Epistemic Uncertainty."
+
+    prompt = f"""
+You are a SKEPTICAL AGENT.
+
+Your goal is to critically DISMANTLE the following response.
+
+RESPONSE TO EVALUATE:
+\"\"\"{response.strip()}\"\"\"
+
+
+ORIGINAL QUESTION:
+\"\"\"{question.strip()}\"\"\"
+
+
+AVAILABLE DOCUMENTS (SOLE source of truth for this analysis):
+\"\"\"{source_text.strip()}\"\"\"
+
+
+METHODOLOGICAL INSTRUCTIONS (follow strictly):
+
+1. Analyze the response sentence by sentence.
+2. For every claim or significant statement, ask yourself:
+   - Is it clearly SUPPORTED by the documents above?
+   - Can I find a sentence, paragraph, or concept in the documents that explicitly justifies this statement?                 #
+3. If you do NOT find direct or strongly implied support in the documents,
+   you MUST label that statement as:
+   EPISTEMIC FAILURE.
+4. Do NOT concern yourself with style, rhetoric, or clarity.
+   You must focus ONLY on epistemic traceability relative to the provided documents.
+
+MANDATORY output format (do not add anything else):
+
+For each important claim in the response, return an entry in the following format:
+
+- CLAIM: "text of the sentence or statement"
+  STATUS: VERIFIED / EPISTEMIC FAILURE
+  REASON: brief explanation, indicating if and where you find (or DO NOT find) support in the documents.
+
+If the documents do not contain enough information to verify almost anything,
+state this clearly in the REASON.
+"""
+
+    try:
+        res = llm.invoke(prompt.strip())
+        content = getattr(res, "content", str(res))
+        return content
+    except Exception as e:
+        logging.error(f"[skeptical_agent] Error during LLM invocation: {e}")
+        return "Error in the Skeptical Agent during response analysis."
