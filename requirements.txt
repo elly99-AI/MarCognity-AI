@@ -21,5 +21,7 @@ spacy
 pdfplumber
 PyPDF2
 python-docx
-PyMuPDF
-langdetect
+pymupdf==1.25.0
+langdetect==1.0.9
+kaleido==0.2.1
+sacremoses
