@@ -20,8 +20,12 @@ def execute_intentional_choice(action, goal, alternatives, context):
 
 # Generates a response with intentionality by combining reasoning, AI response, and extracted text
 def generate_response_with_intention(prompt, action, goal, alternatives, context):
-    reasoning = execute_intentional_choice(action, goal, alternatives, context)
-    ai_response = llm.invoke(prompt)
-    response_text = getattr(ai_response, "content", str(ai_response)).strip()
+    try:
+        reasoning = execute_intentional_choice(action, goal, alternatives, context)
+        ai_response = llm.invoke(prompt)
+        response_text = str(getattr(ai_response, "content", ai_response)).strip()
 
-    return f"{response_text}\n\n*Agent's intentional explanation:*\n{reasoning}"
+        return f"{response_text}\n\n*Agent's intentional explanation:*\n{reasoning}"
+    except Exception as e:
+        logging.error(f"Error generating response with intention: {e}")
+        return f"Error generating response with intention: {e}"
