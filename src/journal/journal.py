@@ -48,7 +48,7 @@ def save_journal_markdown(data, file_name):
         f.write(f"# AGI Metacognitive Journal\n\n")
         f.write(f"## User Input\n> {data['prompt']}\n\n")
         f.write(f"## Generated Response\n{data['response']}\n\n")
-        f.write(f"## Critical Self-Reflection\n{data['reflection']}\n\n")                                       #
+        f.write(f"## Critical Self-Reflection\n{data['reflection']}\n\n")                                       
         f.write(f"## Skeptical Validation Report\n{data['skeptical_report']}\n")
 
 #Create file with timestamp
@@ -58,3 +58,4 @@ save_journal_markdown(journal[0], filename)
 
 print(f"Journal saved: {filename}")
 display(FileLink(filename))
+
