@@ -286,7 +286,35 @@ def execute_with_retry(function, max_attempts=3, base_delay=2):
     return "Persistent error: unable to complete the operation."
 
 
-# === Visualization (optional) ===
+
+# Consolidate search results to feed the skeptical agent
+context_docs = f"""
+ARXIV DOCUMENTS:
+{arxiv_results}
+
+PUBMED DOCUMENTS:
+{pubmed_results}
+
+OPENALEX DOCUMENTS:                                                             
+{openalex_results}
+
+ZENODO DOCUMENTS:
+{zenodo_results}
+"""
+
+
+# Passing example_problem, level, and the newly created context_docs.
+final_response = await metacognitive_cycle(example_problem, level, 3, context_docs)
+
+# The skeptic has already processed final_response; now we check for ethical risks
+ethical_check = assess_ethical_risk(final_response)
+
+if ethical_check["revised_response"]:
+    output_ai = ethical_check["revised_response"]
+else:
+    output_ai = final_response
+
+
 if chart_requested and diagram_type_ml in ["Chart", "Conceptual diagram", "State diagram"]:
     logging.info("Generating interactive chart...")
     try:
@@ -295,9 +323,18 @@ if chart_requested and diagram_type_ml in ["Chart", "Conceptual diagram", "State
         logging.info("Chart successfully generated!")
     except Exception as e:
         logging.error(f"Error during chart generation: {e}")
-else:
-    logging.info("Chart not requested or not necessary.")
 
+# FINAL FILE EXPORT
+import datetime
+
+timestamp = datetime.datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+file_name = f"final_report_{timestamp}.txt"
+
+with open(file_name, "w", encoding="utf-8") as f:
+    f.write(output_ai)
+
+print(f"\n[SYSTEM] Analysis completed successfully!")
+print(f"[INFO] The report includes: Optimized Response, Skeptical Analysis, and Verified Citations.")
 
 from IPython.display import FileLink
-FileLink(file_name)
+display(FileLink(file_name))
