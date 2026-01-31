@@ -208,7 +208,6 @@ It shows step-by-step how the agent generates, evaluates, and reflects on a resp
 ![Non-Commercial Use](https://img.shields.io/badge/Uso-Non%20commerciale-red)  
 [![Contribute](https://img.shields.io/badge/Contribuisci-Aperto%20a%20PR-green)](Contributing.md)
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/#fileId=https%3A//huggingface.co/elly99/MarCognity-AI/blob/main/Notebooks/demo_MarCognity_ai.ipynb)
 
 
 
