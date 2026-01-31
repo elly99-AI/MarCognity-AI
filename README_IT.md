@@ -4,18 +4,18 @@
 ---
 
 ## Indice
-- Che cos’è MarCognity‑AI
-- Origini
-- Interazioni iniziali con la community
-- Visione
-- Limitazioni
-- Stato della ricerca
-- Frattura osservata
-- Perché usarlo
-- Capacità principali
-- Esempi d’uso
-- Architettura cognitiva
-- Modelli di IA integrati
+- [Che cos’è MarCognity‑AI](#Che-cos’è-MarCognity‑AI)
+- [Origini](#Origini)
+- [Interazioni iniziali con la community](#Interazioni-iniziali-con-la-community)
+- [Visione](#Visione)
+- [Limitazioni](#Limitazioni)
+- [Stato della ricerca](#Stato-della-ricerca)
+- [Frattura osservata](#Frattura-osservata)
+- [Perché usarlo](#Perché-usarlo)
+- [Capacità principali](#Capacità-principali)
+- [Esempi d’uso](#Esempi-d’uso)
+- [Architettura cognitiva](#Architettura-cognitiva)
+- [Modelli di IA integrati](#Modelli-di-IA-integrati)
 
 ---
 
@@ -58,7 +58,7 @@ MarCognity è nato da curiosità, studio e determinazione.
 ### Pubblicazione ufficiale
 | MarCognity‑AI | DOI |
 |---------------|-----|
-| DOI permanente | https://doi.org/10.5281/zenodo.18435049 |
+| DOI permanente | https://doi.org/10.5281/zenodo.18440333 |
 | Accesso | PDF + Codice su Zenodo |
 
 ---
