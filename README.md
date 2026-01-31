@@ -86,10 +86,10 @@ It integrates semantic memory, ethical auditing, and scientific validation to tr
 
 The official version of the code and the full research paper have been permanently archived on Zenodo and are citable using their Digital Object Identifier (DOI).
 
-| **MarCognity-AI** | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17855185.svg)](https://doi.org/10.5281/zenodo.18435049) |
+| **MarCognity-AI** | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17855185.svg)](https://doi.org/10.5281/zenodo.18440333) |
 |---|---|
-| **Permanent DOI** | `https://doi.org/10.5281/zenodo.18435049` |
-| **Access Publication** | [Full Research Paper (PDF) & Code (Zenodo)](https://doi.org/10.5281/zenodo.18435049) |
+| **Permanent DOI** | `https://doi.org/10.5281/zenodo.18440333` |
+| **Access Publication** | [Full Research Paper (PDF) & Code (Zenodo)](https://doi.org/10.5281/zenodo.18440333) |
 
 
 
