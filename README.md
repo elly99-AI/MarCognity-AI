@@ -2,80 +2,101 @@
 **A research framework for reflective and epistemically transparent AI systems**
 ---
 
+[![License: Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-blue)](https://www.apache.org/licenses/LICENSE-2.0)  
+
+---
+
 ## Table of Contents
 
-- [What is MarCognity-AI](#what-is-marcognity-ai)
-- [Origins](#origins)
-- [Community Recognition](#community-recognition)
-- [Vision](#vision)
-- [Limitations](#limitations)
-- [Research Status](#research-status)
-- [Observed Fracture](#observed-fracture)
-- [Why Use It](#why-use-it)
+- [Overview](#overview)
+- [Research Motivation](#research-motivation)
+- [Modules and Functions](#modules-and-functions)
 - [Core Capabilities](#core-capabilities)
-- [Usage Examples](#usage-examples)
-- [Cognitive Architecture](#cognitive-architecture)
+- [Early Community Interactions(Non-Endorsement)](#early-community-interactions(non-endorsement))
+- [Official Publication and Citation](#official-publication-and-citation)
+- [Structural Limitation & Research Scope](#structural-limitation-&-research-scope)
 - [Integrated AI Models](#integrated-ai-models)
 
 ---
 
-## What is MarCognity-AI
+## Overview
 
-MarCognity-AI is an open-source framework that transforms language models into **cognitive assistants**.  
-It doesn’t just generate responses — it **evaluates**, **improves**, **visualizes**, **remembers**, and **reflects ethically** on its outputs.  
-Its goal is to make the hidden processes behind AI-generated responses transparent.
+MarCognity-AI is a modular open-source research framework designed to investigate structural limitations of LLM-based metacognition and introduce explicit epistemic verification layers.
 
-Born from curiosity.  
-Grown through persistence.  
-Now ready to challenge how we think about artificial intelligence.
+Rather than simply generating responses, the system:
+- Produces structured outputs
+- Evaluates semantic coherence
+- Verifies claims against retrieved sources
+- Stores semantic memory
+
+Generates structured epistemic reports
+
+The goal is not to “improve answers,” but to analyze the structural fracture between linguistic coherence and epistemic awareness in large language models.
+
+---
+## Research Motivation
+
+Large Language Models optimize linguistic probability — not factual truth.
+
+MarCognity-AI investigates the following core question:
+
+Can epistemic uncertainty be made explicit within an LLM-based system?
+
+This framework does not claim to solve LLM hallucinations.
+Instead, it exposes and documents the failure modes of artificial metacognition in a reproducible way.
+
+The following cognitive architecture is composed of independent modules.
+
+## Modules and Functions
+
+| Module                   | Function                                          |
+|--------------------------|---------------------------------------------------|
+| Problem Classification   | Automatic input type detection                    |
+| Academic Prompting       | Structured multidisciplinary prompting            |
+| Scientific Retrieval     | Asynchronous retrieval from open-access sources   |
+| Semantic Evaluation      | Logical and semantic scoring of responses         |
+| Skeptical Agent          | Claim-by-claim verification against sources       |
+| FAISS Memory             | Archiving and comparison of past outputs          |
+| Cognitive Visualization  | Structured conceptual representation              |
+
+
+## Core Capabilities
+
+- LLM-assisted scientific generation  
+- Source retrieval and integration (arXiv, PubMed, Zenodo, OpenAlex)  
+- Multilevel metacognitive evaluation  
+- Sentence-level epistemic verification  
+- Ethical risk and bias analysis  
+- Persistent semantic memory (FAISS)  
+- Markdown-exportable reflective reports  
 
 ---
 
-## Origins
+## Structural Limitation & Research Scope
 
-During an LLM experiment done out of curiosity, a friend said:  
-> “If you improve it, it could be really useful.”
+MarCognity-AI is an exploratory research framework and is not intended for production use.
 
-That sentence sparked something.  
-It became a personal challenge.
+During development, a recurring structural limitation emerged: LLM-based metacognitive layers reliably optimize for linguistic coherence but fail to surface epistemic uncertainty as an explicit signal.
 
-I dove into books, courses like an AI developer master’s, experiments, and lines of code.  
-With creativity, determination, and one goal: **never give up**.
+In practice, the system can evaluate how an answer is written (clarity, structure, semantic alignment), yet it cannot inherently determine whether the underlying claims are genuinely known, verifiable, or epistemically justified. The model can express that a response is unclear, but not that it lacks grounded knowledge.
 
-MarCognity wasn’t born in a lab.  
-It was born from a curious, free, and determined mind.
+This collapse between linguistic coherence and epistemic awareness is not treated as a bug to be fixed, but as a structural fracture to be studied. The purpose of this framework is to expose, analyze, and document this limitation in a reproducible way.
+
+The demo and cognitive journal included in this repository are designed to make this failure mode observable — not to present a solved system.
 
 ---
+
 ## Early Community Interactions (Non-Endorsement)
 
-MarCognity-AI has already sparked resonance across major AI communities.
-
-- **Google org** responded to the semantic mapping layer of MarCognity-AI, recognizing its unique contribution to reflective AI design.
-- **DeepSeek community** engaged with the framework, confirming its relevance in the orchestration of open-source agents.
+A discussion was opened regarding the semantic mapping layer.
+Community members from Hugging Face and related model discussions engaged technically with the proposal.
 
 You can explore the original threads and responses here:  
 🔗 [Hugging Face Discussion](https://huggingface.co/elly99/MarCognity-AI/discussions)  
 🔗 [DeepSeek Community Thread](https://huggingface.co/elly99/MarCognity-AI/discussions)  
-🔗 [Google org Response Snapshot] (https://huggingface.co/google/gemma-2b-it/discussions/70#68ecace9e79b11c589bcead9)
+🔗 [Google org Response Snapshot](https://huggingface.co/google/gemma-2b-it/discussions/70#68ecace9e79b11c589bcead9)
 
 ---
-## Vision
-
-> An AI that generates, evaluates, visualizes — and learns from its own outputs.
-
-- Multilevel academic prompting  
-- Metacognitive evaluation (semantic score + reflection)  
-- Scientific retrieval from open-access databases  
-- Conceptual diagrams and dynamic graphs  
-- FAISS semantic memory with self-improvement  
-- Ethical analysis and cognitive filtering  
-- Reflective cognitive journal
-
-## Vision
-MarCognity‑AI is an open-source framework for reflective and transparent AI.  
-It integrates semantic memory, ethical auditing, and scientific validation to transform LLMs into metacognitive assistants.  
-
-👉 Read the full article: [MarCognity‑AI: A Metacognitive Framework](https://www.linkedin.com/pulse/marcognityai-metacognitive-framework-reflective-elena-marziali-aifzf/?trackingId=zmd04OPSR8Saewmny%2F0mTg%3D%3D)
 
 ### 📚 Official Publication and Citation
 
@@ -86,78 +107,6 @@ The official version of the code and the full research paper have been permanent
 | **Permanent DOI** | `https://doi.org/10.5281/zenodo.18440333` |
 | **Access Publication** | [Full Research Paper (PDF) & Code (Zenodo)](https://doi.org/10.5281/zenodo.18440333) |
 
-
-
----
-## Limitations
-
-LLM‑based metacognition collapses at the same fault line: it confuses linguistic coherence with epistemic awareness.
-The model can say “this answer is unclear,” but not “I don’t know if what I’m saying is true.
-
----
-## Research Status
-MarCognity-AI is an exploratory research framework.
-It is not a production-ready system.
-Its purpose is to expose and study structural limits of LLM-based metacognition,
-particularly the collapse between linguistic coherence and epistemic awareness.
-This line of investigation is ongoing.
-
----
-## Observed Fracture
-
-During the development of MarCognity-AI, a recurring failure mode emerged:
-
-LLM-based metacognitive layers reliably optimize for linguistic coherence
-but fail to surface epistemic uncertainty as an explicit signal.
-
-The system can evaluate how an answer is written,
-yet cannot account for whether what is being said is actually known,
-verifiable, or admissible.
-
-This collapse between coherence and awareness
-is not treated here as a bug to be fixed,
-but as a structural fracture to be studied.
-
----
-## Note for Readers
-The demo and cognitive journal in this repository are meant to expose a reproducible failure mode, not a solved system.
-
----
-
-
-## Why Use It
-
-### 1. Integrated Metacognitive Thinking  
-Each response is **evaluated**, **improved**, and **contextualized**.  
-MarCognity reflects on its output, analyzes coherence, and compares it with past responses.
-
-### 2. Scientific Retrieval and Cognitive Visualization  
-It integrates open-access sources (arXiv, PubMed, Zenodo) and generates **conceptual diagrams**, **dynamic graphs**, and **interpretive curves** to make each response **visually understandable**.
-
-### 3. Ethics and Responsibility at the Core  
-Each output undergoes an **ethical audit**: bias detection, risk analysis, and cognitive filtering.  
-MarCognity isn’t just intelligent. It’s **aware**.
-
-### 4. Reflective Cognitive Journal  
-Each response is accompanied by a detailed **metacognitive reflection**, saved in Markdown for analysis and reuse.
-
-### 5. Epistemic Transparency
-The Skeptical Agent exposes unsupported claims through a structured verification report, making epistemic uncertainty explicit.
-
----
-
-## Core Capabilities
-
-- Scientific generation powered by LLMs  
-- Retrieval and validation of sources (arXiv, PubMed, Zenodo, OpenAlex)  
-- Intelligent visualization (Plotly, NetworkX…)  
-- Responses adaptable to beginner / advanced / expert levels  
-- Automatic improvement of weak responses  
-- Version archiving in FAISS memory  
-- Ethical risk and linguistic bias analysis  
-- Reflective cognitive journal with Markdown export
-- Epistemic Verification Layer (Skeptical Agent): decomposes responses into claims and checks them against sources
-
 ---
 
 ## Usage Examples
@@ -165,14 +114,6 @@ The Skeptical Agent exposes unsupported claims through a structured verification
 ### Scientific Question  
 **Input:** “Explain the role of chaperone proteins.”  
 **Output:** Response + sources + semantic score + conceptual diagram
-
-### Ethical Dilemma  
-**Input:** “Is it right to use AI to decide criminal sentences?”  
-**Output:** Argumentation + ethical analysis + detected biases
-
-### Multidisciplinary Question  
-**Input:** “Compare the view of consciousness in philosophy and neuroscience.”  
-**Output:** Structured response + sources + cognitive visualization + reflective journal
 
 ### Epistemic Verification Example
 Input: “Explain quantum entanglement.”
@@ -186,27 +127,25 @@ VERIFIED / EPISTEMIC FAILURE report
 
 Reasoning based on provided sources
 
----
-
-## Try It Now  
+--- 
 ### Quick Demo
 
-Want to see how MarCognity-AI works?
+A step-by-step execution example is available in:
 
-Check out the file `marcognity_demo.ipynb`  
-It’s not interactive, but it’s readable and self-explanatory. A concrete example of how the system works.  
-It shows step-by-step how the agent generates, evaluates, and reflects on a response.
+`marcognity_demo.ipynb`
 
+The notebook illustrates:
+- Response generation
+- Retrieval integration
+- Claim-level verification
+- Epistemic reporting
 
-[Meta LLaMA 4 Community License](https://ai.meta.com/llama/license)  
-[![License: Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-blue)](https://www.apache.org/licenses/LICENSE-2.0)  
-![Non-Commercial Use](https://img.shields.io/badge/Uso-Non%20commerciale-red)  
-[![Contribute](https://img.shields.io/badge/Contribuisci-Aperto%20a%20PR-green)](Contributing.md)
+[Meta LLaMA 4 Community License](https://ai.meta.com/llama/license) 
 
+It is intended for inspection and reproducibility, not interactive deployment.
 
+--- 
 
-
----
 
 ## Integrated AI Models
 
@@ -221,20 +160,6 @@ It shows step-by-step how the agent generates, evaluates, and reflects on a resp
 
 ---
 
-## Cognitive Architecture
-
-| Module                 | Function                                                                 |
-|------------------------|---------------------------------------------------------------------------|
-| Problem Classification | Automatic recognition of input type                                       |
-| Academic Prompting     | Structuring complex multidisciplinary queries                             |
-| Scientific Retrieval   | Asynchronous querying of multiple open‑access sources                     |
-| Semantic Evaluation    | Response analysis with logical and semantic scoring                       |
-| Skeptical Agent        | Sentence‑level claim verification against provided sources; flags unsupported statements and produces an epistemic report |
-| FAISS Memory           | Archiving and comparison with past responses, including reflective evaluations |
-| Cognitive Visualization| Scientific content processing, ethical analysis, and conceptual representation using selected transformer models |
-
-
----
 
 ## How to Contribute
 
@@ -250,14 +175,13 @@ See the [CONTRIBUTING.md](Contributing.md) file for contribution guidelines.
 
 ---
 
-## Contribute
+## License
+
+Released under the Apache 2.0 License.
+Third-party integrated models follow their respective licenses.
+
+
 Contributions are welcome! If you have additional examples or improvements, please feel free to open a pull request or report an issue.
 
----
-MarCognity-AI is not just a framework.  
-It is a threshold.  
-An invitation to rethink how artificial intelligence can reflect, improve, and act with awareness.
-This project is released under the Apache 2.0
 
-> _“Every response is a threshold. Every reflection, an act of agency.”_
 
