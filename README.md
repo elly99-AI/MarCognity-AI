@@ -21,18 +21,21 @@
 
 ## Overview
 
-MarCognity-AI is a modular open-source research framework designed to investigate structural limitations of LLM-based metacognition and introduce explicit epistemic verification layers.
+MarCognity-AI is a modular open-source framework designed to analyze limitations of LLM-based information processing and introduce structured verification layers.
 
-Rather than simply generating responses, the system:
+The system:
+
 - Produces structured outputs
-- Evaluates semantic coherence
+
+- Decomposes responses into individual claims
+
 - Verifies claims against retrieved sources
-- Stores semantic memory
 
-Generates structured epistemic reports
+- Evaluates semantic coherence
 
-The goal is not to “improve answers,” but to analyze the structural fracture between linguistic coherence and epistemic awareness in large language models.
+- Generates structured analytical reports
 
+The framework is intended for methodological experimentation and reproducibility.
 ---
 ## Research Motivation
 
