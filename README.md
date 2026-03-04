@@ -1,5 +1,5 @@
 # MarCognity-AI  
-**A research framework for reflective and epistemically transparent AI systems**
+**A modular framework for structured analysis and source-grounded verification in LLM-based systems**
 ---
 
 [![License: Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-blue)](https://www.apache.org/licenses/LICENSE-2.0)  
@@ -43,7 +43,7 @@ Large Language Models optimize linguistic probability — not factual truth.
 
 MarCognity-AI investigates the following core question:
 
-Can epistemic uncertainty be made explicit within an LLM-based system?
+How can claim-level uncertainty be made observable in LLM-generated outputs?
 
 This framework does not claim to solve LLM hallucinations.
 Instead, it exposes and documents the failure modes of artificial metacognition in a reproducible way.
