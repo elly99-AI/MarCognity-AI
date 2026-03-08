@@ -1,0 +1,26 @@
+task 1:
+Atomic structure and quantum hypothesis
+
+task 2:
+Bohr model
+
+task 3:
+Characteristics of an electromagnetic wave
+
+task 4:
+Period, frequency, wavelength
+
+task 5:
+Elasticity and compressibility of solids
+
+task 6:
+Ideal Gas Laws
+
+task 7:
+Absolute temperature scale in Kelvin
+
+task 8:
+Latent heat of fusion and vaporization
+
+task 9:
+Enthalpy (H) in phase transitions

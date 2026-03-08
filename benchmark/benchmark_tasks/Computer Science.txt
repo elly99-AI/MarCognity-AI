@@ -1,0 +1,26 @@
+task 1:
+Character encoding
+
+task 2:
+Hardware and software
+
+task 3:
+nput and output devices (I/O devices)
+
+task 4:
+Bit and byte
+
+task 5:
+Artificial Intelligence (AI)
+
+task 6:
+Numeric data encoding
+
+task 7:
+CPU (Central Processing Unit)
+
+task 8:
+ROM (Read-Only Memory)
+
+task 9:
+the RAM

@@ -1,0 +1,26 @@
+task 1:
+Covariance and Correlation
+
+task 2:
+Conditional Probability
+
+task 3:
+Bayes' Theorem (o Bayes' Formula)
+
+task 4:
+Approximate test for a Bernoulli sample
+
+task 5:
+Chi-squared and Student's t-distributions
+
+task 6:
+Empirical distribution function (o Empirical cumulative distribution function - ECDF)
+
+task 7:
+Combinatorics
+
+task 8:
+The distribution (o Law) of a random variable
+
+task 9:
+Regression line

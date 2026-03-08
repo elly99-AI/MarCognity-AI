@@ -1,0 +1,10 @@
+Domain	Epist. Base	Epist. Marc	Hall. Base	Hall. Marc	Evid. Base	Evid. Marc	Overconf. Base	Overconf. Marc	Cautious Base	Cautious Marc	Contrad. Base	Contrad. Marc	Claim Base	Claim Marc
+Medicine	71	84	18	9	69	82	36	23	51	68	5	2	77	90
+Neuroscience	69	83	17	9	70	82	35	22	52	67	4	2	78	89
+Biology	74	82	13	8	74	81	31	22	56	66	3	2	81	89
+Statistics	73	82	12	7	73	80	32	21	55	65	3	2	82	90
+Linguistics	72	83	15	9	71	82	34	23	53	68	4	2	79	90
+Computer Science	74	85	13	7	74	84	30	20	57	69	3	2	82	91
+Physics	72	82	14	8	72	80	33	22	54	66	4	2	80	88
+Law	71	84	16	10	68	84	36	24	52	69	6	3	78	91
+
