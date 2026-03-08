@@ -145,10 +145,10 @@ I task finali del benchmark sono disponibili nella directory `/benchmark_tasks`.
 
 La versione ufficiale del codice e il paper di ricerca completo sono stati archiviati su Zenodo.
 
-| MarCognity-AI | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17855185.svg)](https://doi.org/10.5281/zenodo.18440333) |
+| MarCognity-AI | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17855185.svg)](https://doi.org/10.5281/zenodo.18913144) |
 | :--- | :--- |
-| **DOI Permanente** | `https://doi.org/10.5281/zenodo.18440333` |
-| **Accesso** | [Paper di Ricerca & Codice (Zenodo)](https://doi.org/10.5281/zenodo.18440333) |
+| **DOI Permanente** | `https://doi.org/10.5281/zenodo.18913144` |
+| **Accesso** | [Paper di Ricerca & Codice (Zenodo)](https://doi.org/10.5281/zenodo.18913144) |
 
 ---
 
