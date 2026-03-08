@@ -92,7 +92,55 @@ Questa discrepanza è l'oggetto principale dello studio: il framework serve a es
 - 🔗 [Google org Response Snapshot](https://huggingface.co/google/gemma-2b-it/discussions/70#68ecace9e79b11c589bcead9)
 
 ---
+## Benchmark Epistemico Cross-Domain
 
+Per valutare il comportamento epistemico dell’architettura, è stato condotto un benchmark cross-domain su otto domini scientifici e tecnici.
+
+### Domini inclusi
+
+- Medicina
+- Neuroscienze
+- Biologia
+- Statistica
+- Linguistica
+- Informatica
+- Fisica
+- Diritto
+
+Il benchmark consiste in **72 task di valutazione (9 per dominio)**.
+
+### Configurazioni valutate
+
+Sono state valutate due configurazioni:
+
+- un **modello linguistico di grandi dimensioni (LLM) baseline**, operante senza verifica epistemica
+- l’**architettura MarCognity-AI**, che integra il ciclo metacognitivo e lo Skeptical Agent
+
+Ogni risposta generata dai due sistemi è stata valutata tramite un **protocollo strutturato di valutazione epistemica basato su prompt**, applicato da un LLM indipendente che funge da valutatore.
+
+### Metriche di affidabilità epistemica
+
+- Epistemic Score
+- Hallucination Exposure Rate
+- Evidence Support Rate
+- Overconfidence Index
+- Cautious Response Ratio
+- Contradiction Rate
+- Claim Verification Accuracy
+
+I task del benchmark, i prompt di valutazione e i risultati sono disponibili nella directory `/benchmark`.
+
+### Pipeline di generazione dei task
+
+I task del benchmark sono stati generati utilizzando file di argomenti specifici per dominio, elaborati dal sistema MarCognity.
+
+Il sistema ha estratto i nomi dei topic e ha generato domande scientifiche esplicative basate su tali argomenti.
+
+Le domande generate sono state poi revisionate e curate manualmente per garantire chiarezza, diversità concettuale e rilevanza disciplinare.
+
+I task finali del benchmark sono disponibili nella directory `/benchmark_tasks`.
+
+---
 ## Pubblicazione Ufficiale e Citazione
 
 La versione ufficiale del codice e il paper di ricerca completo sono stati archiviati su Zenodo.
