@@ -141,6 +141,26 @@ Le domande generate sono state poi revisionate e curate manualmente per garantir
 I task finali del benchmark sono disponibili nella directory `/benchmark_tasks`.
 
 ---
+### Analisi dei Fallimenti
+
+Un'analisi qualitativa dei casi di fallimento rappresentativi è fornita in:
+
+`benchmark/failure_analysis`
+
+L'analisi identifica schemi ricorrenti di fallimento epistemico, tra cui:
+
+* **Ambiguità della fonte**
+* **Perdita di contesto** durante la segmentazione delle asserzioni
+* **Inferenza non autorizzata**
+* **Falsi negativi del valutatore**
+* **Ambiguità semantica**
+* **Corpus di conoscenza incompleto**
+
+Queste osservazioni suggeriscono la presenza di un **confine epistemico** nei sistemi di verifica basati su testo.
+
+---
+
+
 ## Pubblicazione Ufficiale e Citazione
 
 La versione ufficiale del codice e il paper di ricerca completo sono stati archiviati su Zenodo.
