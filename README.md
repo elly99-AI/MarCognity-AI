@@ -37,7 +37,9 @@ The system:
 - Generates structured analytical reports
 
 The framework is intended for methodological experimentation and reproducibility.
+
 ---
+
 ## Research Motivation
 
 Large Language Models optimize linguistic probability — not factual truth.
@@ -148,6 +150,25 @@ The system extracted topic names and generated explanatory scientific questions 
 The generated questions were then manually reviewed and curated to ensure clarity, conceptual diversity, and domain relevance.
 
 The final benchmark tasks are available in the `/benchmark_tasks` directory.
+
+---
+
+### Failure Analysis
+
+A qualitative analysis of representative failure cases is provided in:
+
+benchmark/failure_analysis.md
+
+The analysis identifies recurring epistemic failure patterns including:
+
+• Source ambiguity  
+• Context loss during claim segmentation  
+• Unauthorized inference  
+• Evaluator false negatives  
+• Semantic ambiguity  
+• Incomplete corpus of knowledge  
+
+These observations suggest the presence of an epistemic boundary in text-based verification systems.
 
 ---
 
