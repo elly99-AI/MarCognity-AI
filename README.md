@@ -157,7 +157,7 @@ The final benchmark tasks are available in the `/benchmark_tasks` directory.
 
 A qualitative analysis of representative failure cases is provided in:
 
-benchmark/failure_analysis.md
+benchmark/failure_analysis
 
 The analysis identifies recurring epistemic failure patterns including:
 
