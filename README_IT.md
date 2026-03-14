@@ -160,6 +160,13 @@ Queste osservazioni suggeriscono la presenza di un **confine epistemico** nei si
 
 ---
 
+### Epistemic Boundary
+
+Analisi concettuale dell’incertezza irreducibile osservata nel benchmark.
+
+➡️ `benchmark/Epistemic_Boundary.md`
+
+---
 
 ## Pubblicazione Ufficiale e Citazione
 
