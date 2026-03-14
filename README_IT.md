@@ -172,10 +172,10 @@ Analisi concettuale dell’incertezza irreducibile osservata nel benchmark.
 
 La versione ufficiale del codice e il paper di ricerca completo sono stati archiviati su Zenodo.
 
-| MarCognity-AI | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17855185.svg)](https://doi.org/10.5281/zenodo.18913144) |
+| MarCognity-AI | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17855185.svg)](https://doi.org/10.5281/zenodo.19020581) |
 | :--- | :--- |
-| **DOI Permanente** | `https://doi.org/10.5281/zenodo.18913144` |
-| **Accesso** | [Paper di Ricerca & Codice (Zenodo)](https://doi.org/10.5281/zenodo.18913144) |
+| **DOI Permanente** | `https://doi.org/10.5281/zenodo.19020581` |
+| **Accesso** | [Paper di Ricerca & Codice (Zenodo)](https://doi.org/10.5281/zenodo.19020581) |
 
 ---
 
