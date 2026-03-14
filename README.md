@@ -176,13 +176,9 @@ These observations suggest the presence of an epistemic boundary in text-based v
 
 ### Epistemic Boundary
 
-MarCognity-AI introduces the concept of an **Epistemic Boundary**:  
-an irreducible region of uncertainty observed across all domains in the cross‑domain benchmark.
+Conceptual analysis of the irreducible uncertainty observed in the benchmark.
 
-This section presents the empirical evidence (8–15% persistent failure rate)  
-and the theoretical implications for the structural limits of autoregressive language models.
-
-➡️ See: `benchmark/Epistemic_Boundary.md`
+➡️ `benchmark/Epistemic_Boundary.md`
 
 ---
 
