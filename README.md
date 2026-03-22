@@ -235,7 +235,7 @@ It is intended for inspection and reproducibility, not interactive deployment.
 
 | Integrated Models                                            | License                              | Main Restrictions                                                   |
 |--------------------------------------------------------------|--------------------------------------|----------------------------------------------------------------------|
-| meta-llama/llama-4-maverick-17b-128e-instruct                | LLaMA 4 Community License (Meta)     | Research and application use allowed; must comply with Meta’s AUP   |
+| meta-llama/llama-4-scout-17b-16e-instruct                    | LLaMA 4 Community License (Meta)     | Research and application use allowed; must comply with Me  |
 | allenai/specter                                              | Apache 2.0                           | Free for commercial use with attribution                            |
 | ktrapeznikov/scibert_scivocab_uncased_squad_v2               | Apache 2.0                           | Free for commercial use with attribution                            |
 | Helsinki-NLP (OPUS-MT models on HuggingFace)                 | CC-BY-4.0                            | Free use with mandatory citation                                    |
