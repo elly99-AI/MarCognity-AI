@@ -242,8 +242,10 @@ It is intended for inspection and reproducibility, not interactive deployment.
 | RandomForest Model                                           | None (classic algorithm)             | No license restrictions; depends on data used                       |
 | CrossEncoder (DeBERTa-based)                                 | Varies (often MIT or Apache 2.0)     | Free use if open license is respected                               |
 
----
 
+Note: Llama 4 Maverick was used for the cross-domain benchmark evaluation. Subsequent development phases use meta-llama/llama-4-scout-17b-16e-instruct due to API availability constraints.
+
+---
 
 ## How to Contribute
 
