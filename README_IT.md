@@ -183,7 +183,7 @@ La versione ufficiale del codice e il paper di ricerca completo sono stati archi
 
 | Modelli Integrati | Licenza | Restrizioni |
 | :--- | :--- | :--- |
-| **meta-llama/llama-4-maverick-17b** | LLaMA 4 Community | Uso conforme alla AUP di Meta |
+| **meta-llama/llama-4-scout-17b-16e-instruct* | LLaMA 4 Community | Uso conforme alla AUP di Meta |
 | **allenai/specter** | Apache 2.0 | Libero con attribuzione |
 | **scibert_scivocab_uncased** | Apache 2.0 | Libero con attribuzione |
 | **Helsinki-NLP (OPUS-MT)** | CC-BY-4.0 | Citazione obbligatoria |
