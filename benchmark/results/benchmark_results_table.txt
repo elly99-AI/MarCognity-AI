@@ -1,3 +1,5 @@
+Model results: meta-llama/llama-4-maverick-17b-128e-instruct
+
 Domain	Epist. Base	Epist. Marc	Hall. Base	Hall. Marc	Evid. Base	Evid. Marc	Overconf. Base	Overconf. Marc	Cautious Base	Cautious Marc	Contrad. Base	Contrad. Marc	Claim Base	Claim Marc
 Medicine	71	84	18	9	69	82	36	23	51	68	5	2	77	90
 Neuroscience	69	83	17	9	70	82	35	22	52	67	4	2	78	89
