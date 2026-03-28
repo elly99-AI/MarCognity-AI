@@ -1,3 +1,5 @@
+failure_analysis: meta-llama/llama-4-maverick-17b-128e-instruct
+
 ### Case 1 — Source Ambiguity
 
 **Domain:** Medicine  
