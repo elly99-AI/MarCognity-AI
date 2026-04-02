@@ -62,6 +62,7 @@ The following cognitive architecture is composed of independent modules.
 | Scientific Retrieval     | Asynchronous retrieval from open-access sources   |
 | Semantic Evaluation      | Logical and semantic scoring of responses         |
 | Skeptical Agent          | Claim-by-claim verification against sources       |
+| Factual Grounding        | Evidence extraction from retrieved sources        |
 | FAISS Memory             | Archiving and comparison of past outputs          |
 | Cognitive Visualization  | Structured conceptual representation              |
 
