@@ -54,6 +54,7 @@ Questo framework non pretende di risolvere le "allucinazioni" degli LLM. Al cont
 | **Scientific Retrieval** | Recupero asincrono da fonti open-access |
 | **Semantic Evaluation** | Punteggio logico e semantico delle risposte |
 | **Skeptical Agent** | Verifica puntuale delle affermazioni rispetto alle fonti |
+| **Factual Grounding** | Estrazione di prove dalle fonti recuperate |
 | **FAISS Memory** | Archiviazione e confronto degli output passati |
 | **Cognitive Visualization** | Rappresentazione concettuale strutturata |
 
