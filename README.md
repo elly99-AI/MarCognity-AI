@@ -225,9 +225,26 @@ The notebook illustrates:
 - Claim-level verification
 - Epistemic reporting
 
+
 [Meta LLaMA 4 Community License](https://ai.meta.com/llama/license) 
 
 It is intended for inspection and reproducibility, not interactive deployment.
+
+--- 
+
+## Execution Options
+
+MarCognity-AI provides two alternative execution modes:
+
+- **Groq-based notebook** (`marcognity_demo.ipynb`): uses Groq APIs 
+  for ultra-fast remote inference. Requires a Groq API key.
+
+- **Local notebook** (`marcognity_hf_demo.ipynb`): supports fully 
+  local execution via downloaded models (e.g., GGUF via Hugging Face). 
+  Ideal for offline use or environments without external API dependencies.
+
+MarCognity-AI is model-agnostic: you can swap the reasoning core with 
+any GGUF-compatible model to match your hardware capabilities.
 
 --- 
 
