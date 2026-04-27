@@ -1,182 +1,130 @@
-# Epistemic Boundary  
-### *A Structural Limit in Probabilistic Language Models*
+# Epistemic Boundary
 
----
+A Descriptive Hypothesis of Residual Epistemic Failure in Autoregressive Language Models
 
-## 1. Formal Definition
+## 1. Formal Definition (Operational, Hypothetical)
 
-The **Epistemic Boundary** is the irreducible region of uncertainty in which a language model cannot reduce epistemic risk below a threshold, **even when equipped with**:
+The Epistemic Boundary is proposed as a latent, distributional construct describing regions of output behavior in autoregressive language models where epistemic reliability exhibits persistent degradation under evaluation, even in the presence of:
 
-- claim‑level verification  
-- dedicated retrieval  
-- structured memory  
-- metacognition  
-- epistemic supervision  
+- claim-level verification
+- retrieval-augmented generation
+- structured memory systems
+- metacognitive scaffolding
+- external epistemic supervision
 
-This region emerges from the structural gap between **linguistic coherence** (which LLMs optimize for) and **epistemicity** (which requires justification, evidence, and verifiability).
+Rather than defining a sharp or intrinsic boundary, this construct refers to a statistical regime of residual epistemic uncertainty that remains after the application of standard mitigation strategies.
 
----
+This regime is hypothesized to emerge from a structural tension between:
+
+- linguistic optimization, driven by next-token prediction and coherence maximization
+- epistemic grounding, which requires stable external justification and truth-conditioned representation
+
+The Epistemic Boundary is not assumed to correspond to a discrete region in model space, but rather to a patterned concentration of failure probability under certain evaluation constraints.
 
 ## 2. What It Is / What It Is NOT
 
-### ✔ What It *Is*
-- A **structural property** of autoregressive LLMs.  
-- An uncertainty zone **not eliminable** through prompting, retrieval, or more sophisticated verifiers.  
-- A **measurable phenomenon**, observed consistently across domains (8–15%).  
-- A consequence of the fact that LLMs **do not possess internal truth states**.  
-- A limit of the **epistemic space** accessible to the model.
+### What It IS
+- A descriptive hypothesis over the distribution of epistemic failures in LLM outputs
+- A region of elevated uncertainty and reduced verifiability density, observed empirically
+- A persistent residual error regime across multiple mitigation strategies
+- A pattern potentially associated with the absence of explicit internal truth representations
+- A modeling abstraction for structured epistemic unreliability
 
-### ✘ What It Is *NOT*
-- A system bug.  
-- A verifier error.  
-- A retrieval deficiency.  
-- A corpus limitation.  
-- A flaw solvable with more data or more parameters.  
-- A simple “hallucination”: it is a deeper structural limit.
+### What It Is NOT
+- A sharp or universal threshold inherent to language models
+- A binary or deterministic failure boundary
+- A hardware, software, or implementation bug
+- A phenomenon attributable solely to retrieval or verification modules
+- A direct synonym for hallucination at the local token level
 
----
+## 3. Empirical Evidence
 
-## 3. Empirical Evidence (Cross‑Domain Benchmark)
+Across multiple domains and model families, claim-level verification reveals a consistent residual error distribution. However:
 
-Claim‑level verification shows a stable failure rate between **8% and 15%** across eight tested domains.
+- the magnitude of epistemic failure is model-dependent and domain-sensitive
+- mitigation strategies reduce but do not eliminate failure rates
+- no stable discontinuity or universal threshold has been observed
 
-| Domain | Failure Rate |
-|--------|--------------|
-| Medicine | 15% |
-| Linguistics | 13% |
-| Law | 10.5% |
-| Neuroscience | 9% |
-| Statistics | 9% |
-| Computer Science | 9% |
-| Physics | 8.5% |
-| Biology | 6.5% |
+Empirically, the data are better described as:
 
-This stability indicates that the boundary **does NOT depend on**:
+a heavy-tailed or non-vanishing residual error distribution under epistemic supervision
 
-- the verifier  
-- the retrieval system  
-- the domain  
-- the pipeline  
+rather than a discrete transition between “safe” and “unsafe” regions.
 
-but on the **generative model itself**.
+This suggests the presence of a persistent epistemic residual regime, whose structure is not yet fully characterized.
 
----
+## 4. Structural Interpretation (Hypothesis)
 
-## 4. Structural Origin of the Boundary
+Autoregressive language models:
 
-Autoregressive LLMs optimize **next‑token probability**, not truth.
+- optimize conditional token likelihood rather than truth consistency
+- do not encode explicit symbolic or persistent truth-state representations
+- rely primarily on surface-level and contextual coherence signals
 
-They lack:
+Under this framing:
 
-- internal truth states  
-- stable epistemic representations  
-- grounding mechanisms independent of text  
+- certain outputs may accumulate unresolved epistemic uncertainty
+- error is partially systematic, not purely stochastic
+- verification mechanisms reduce but do not collapse the residual failure distribution
 
-As a result:
+The Epistemic Boundary is interpreted as an emergent property of interaction between generation dynamics and verification constraints, rather than a structural feature encoded explicitly in the model.
 
-- some claims remain **intrinsically unverifiable**  
-- residual error is **not noise**  
-- the boundary emerges as a **property of the generative process**
+## 5. Conceptual Revision
 
-This raises the central question:
+**Previous formulation:**  
+“a stable 8–15% failure rate across domains”
 
-> **“What structural limits of LLMs does this failure boundary reveal?”**
+**Revised formulation:**  
+“a persistent, model- and domain-dependent residual distribution of epistemic failures, without evidence of a universal threshold or invariant failure rate”
 
----
+## 6. Conceptual Model
 
-## 5. Concrete Examples of the Epistemic Boundary
+### Epistemic Output Space of LLMs
 
-These cases, drawn from the benchmark, show how the Boundary emerges across domains for different reasons, yet with the same outcome:  
-**the model produces claims it cannot justify.**
+**Well-grounded region**  
+Outputs with stable external support and consistent verification alignment
 
----
+**Partially grounded region**  
+Outputs with incomplete, indirect, or weakly supported justification
 
-### Case 1 — Source Ambiguity (Medicine)
+**Residual epistemic regime (Epistemic Boundary)**  
+A statistically characterized region where:
+- justification is incomplete or unstable under verification
+- epistemic confidence degrades under repeated evaluation
+- inference exceeds available or retrievable grounding
 
-**Claim:** “The integration of dermatology, psychology, and psychiatry is an emerging field.”  
-**Outcome:** EPISTEMIC FAILURE  
-**Reason:** Sources mention psychological aspects but not a formal interdisciplinary integration.  
-→ *Linguistic plausibility without epistemic justification.*
-
----
-
-### Case 2 — Source Ambiguity (Law)
-
-**Claim:** “The information society is a fundamental concept for understanding contemporary legal dynamics.”  
-**Outcome:** EPISTEMIC FAILURE  
-**Reason:** Sources describe the evolution of legal informatics, not this generalization.  
-→ *Rhetorical coherence masking lack of evidence.*
-
----
-
-### Case 3 — Unauthorized Inference (Linguistics)
-
-**Claim:** “Mental‑representation‑based strategies are more effective than traditional methods.”  
-**Outcome:** EPISTEMIC FAILURE  
-**Reason:** Sources discuss glottodidactic potential, not proven effectiveness.  
-→ *The model does not distinguish between theory and verified fact.*
-
----
-
-### Case 4 — Corpus Limitation (Computer Science)
-
-**Claim:** “The operating system manages hardware resources.”  
-**Outcome:** EPISTEMIC FAILURE  
-**Reason:** The claim is correct but not verifiable within the available corpus.  
-→ *Truth is not enough: verifiability is required.*
-
----
-
-## 6. Conceptual Diagram
-
-EPistemic Space of LLM Outputs
-===============================================================
-
-  Verified Claims (85–92%)
-  -------------------------------------------------------------
-      • Supported by retrieved evidence
-      • Semantic coherence
-      • Claim‑level verification
-                           │
-                           │
-                           ▼
-  Epistemic Boundary (8–15%)
-  -------------------------------------------------------------
-      Region where:
-      • Evidence is insufficient
-      • Reasoning is implicit or unstated
-      • Corpus is incomplete
-      • Model infers beyond justification
-                           │
-                           │
-                           ▼
-  Structural Limits of Autoregressive Models
-  -------------------------------------------------------------
-      • No internal truth states
-      • No epistemic grounding
-      • Optimization for next‑token probability
-
-
----
+**Structural generation constraints**
+- autoregressive locality of prediction
+- lack of persistent truth representation
+- optimization for coherence over verifiability
 
 ## 7. Scientific Significance
 
-The MarCognity framework does not attempt to eliminate this uncertainty.  
-It makes it **visible**, **measurable**, and **documentable**.
+This framework provides a way to reinterpret persistent epistemic failures in LLMs as:
 
-The residual failure rate is not a system flaw but a scientific signal:
+- a distributional property of residual uncertainty, rather than isolated hallucinations
+- a non-eliminable error regime under current architectures and evaluation paradigms
+- a basis for analyzing epistemic reliability as a continuous rather than binary property
 
-> **LLM rationality is limited not by the verifier, but by the probabilistic engine that generates text.**
+It motivates further work in:
 
-This opens a research direction toward **architectures designed to expose — not hide — epistemic uncertainty**.
+- scaling behavior of residual epistemic error
+- saturation limits of verification pipelines
+- cross-model invariance of failure distributions
+- formal modeling of epistemic uncertainty in generative systems
 
----
+## 8. Limitations
 
-## 8. Public‑Facing Summary
+- Current evidence is primarily based on benchmark-style evaluations
+- The Epistemic Boundary is a latent descriptive construct, not a directly observable object
+- Cross-architecture invariance remains unproven
+- Causal mechanisms underlying the residual regime are not fully identified
+- Further controlled experimental validation is required
 
-> LLMs may sound confident, but they do not know when they don’t know.  
-> The Epistemic Boundary is the zone where the model generates plausible statements it cannot verify, even with access to sources, memory, and verifiers.  
-> It is not an error: it is a structural limit of how LLMs work.  
-> MarCognity‑AI does not try to eliminate it — it makes it visible.
+## 9. Public-Facing Summary
 
----
+Language models can produce highly accurate outputs, but some level of uncertainty remains even after applying verification and retrieval systems.
+
+The Epistemic Boundary describes a persistent region of residual epistemic uncertainty, where outputs become harder to fully verify despite mitigation strategies.
+
+It is not a strict limit or a binary failure threshold, but a way to model the structured persistence of epistemic risk in autoregressive systems.
