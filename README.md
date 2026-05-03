@@ -242,6 +242,7 @@ MarCognity-AI provides two alternative execution modes:
 - **Local notebook** (`marcognity_hf_demo.ipynb`): supports fully 
   local execution via downloaded models (e.g., GGUF via Hugging Face). 
   Ideal for offline use or environments without external API dependencies.
+  under review
 
 MarCognity-AI is model-agnostic: you can swap the reasoning core with 
 any GGUF-compatible model to match your hardware capabilities.
