@@ -188,6 +188,8 @@ The Epistemic Integrity Stress Test is an independent protocol designed to evalu
 It highlights the gap between linguistic coherence and the actual grounding of claims, making blind spots, omissions, and undeclared uncertainties observable.
 It is a generic, reproducible tool applicable to any autoregressive model, whether closed or open.
 
+---
+
 ### 📚 Official Publication and Citation
 
 The official version of the code and the full research paper have been permanently archived on Zenodo and are citable using their Digital Object Identifier (DOI).
