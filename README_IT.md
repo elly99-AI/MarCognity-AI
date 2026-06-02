@@ -173,11 +173,9 @@ Analisi concettuale dell’incertezza irriducibile osservata nel benchmark.
 ➡️ `benchmark/Epistemic_Boundary.md`
 
 ---
-Test di stress sull’integrità epistemica
+## Test di stress per l'integrità epistemica
 
-L'Epistemic Integrity Stress Test è un protocollo indipendente progettato per valutare la robustezza epistemica dei testi generati da modelli linguistici.
-Evidenzia il divario tra coerenza linguistica e effettiva fondatezza delle affermazioni, rendendo osservabili punti ciechi, omissioni e incertezze non dichiarate.
-È uno strumento generico e riproducibile applicabile a qualsiasi modello autoregressivo, chiuso o aperto.
+Il Test di stress per l'integrità epistemica è un protocollo indipendente progettato per valutare la robustezza epistemica dei testi generati da modelli linguistici. Ispirato a una prospettiva neuropsicologica, mette in luce il divario tra coerenza linguistica e fondamento empirico effettivo, rivelando punti ciechi, confabulazioni, omissioni e inferenze non monitorate. È uno strumento generico e riproducibile, applicabile a qualsiasi modello autoregressivo, sia esso chiuso o aperto.
 
 ---
 
