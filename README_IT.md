@@ -184,7 +184,7 @@ Il Test di stress per l'integrità epistemica è un protocollo indipendente prog
 La versione ufficiale del codice e il paper completo sono archiviati permanentemente su Zenodo.
 
 **MarCognity-AI — DOI**  
-Permanent DOI: https://doi.org/10.5281/zenodo.19385060  
+Permanent DOI: https://doi.org/10.5281/zenodo.20509721
 Access: Full Research Paper (PDF) & Code (Zenodo)
 
 ---
