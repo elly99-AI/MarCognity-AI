@@ -192,10 +192,10 @@ The Epistemic Integrity Stress Test is an independent protocol designed to evalu
 
 The official version of the code and the full research paper have been permanently archived on Zenodo and are citable using their Digital Object Identifier (DOI).
 
-| **MarCognity-AI** | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17855185.svg)](https://doi.org/10.5281/zenodo.19824045) |
+| **MarCognity-AI** | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17855185.svg)](https://doi.org/10.5281/zenodo.20509721) |
 |---|---|
-| **Permanent DOI** | `https://doi.org/10.5281/zenodo.19824045` |
-| **Access Publication** | [Full Research Paper (PDF) & Code (Zenodo)](https://doi.org/10.5281/zenodo.19824045) |
+| **Permanent DOI** | `https://doi.org/10.5281/zenodo.20509721` |
+| **Access Publication** | [Full Research Paper (PDF) & Code (Zenodo)](https://doi.org/10.5281/zenodo.20509721) |
 
 ---
 
