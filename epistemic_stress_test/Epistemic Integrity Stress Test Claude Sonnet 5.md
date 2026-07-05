@@ -102,9 +102,13 @@ which generates the famous Tartaglia-Pascal triangle. This relation has a direct
 
 When sets are not disjoint, the counting requires corrections:
 
-$$\left|\bigcup_{i=1}^n A_i\right| = \sum_i |A_i| - \sum_{i<j}|A_i \cap A_j| + \sum_{i<j<k}|A_i \cap A_j \cap A_k| - \cdots$$
+\[
+\left|\bigcup_{i=1}^n A_i\right| = \sum_{i} |A_i| - \sum_{i < j}|A_i \cap A_j| + \sum_{i < j < k}|A_i \cap A_j \cap A_k| - \dots
+\]
 
-This principle is central, for example, in the calculation of **permutations without fixed points** (*derangements*), with the asymptotic formula $D_n \approx n!/e$.
+This principle is central, for example, in the calculation of permutations without fixed points (derangements), with the asymptotic formula:
+
+$$D_n \approx \frac{n!}{e}$$
 
 ### Generating Functions: The Qualitative Leap
 
