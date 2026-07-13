@@ -230,19 +230,27 @@ CLAIM: "There are no tables or graphs that summarize data or provide further inf
 
 ### 4. Method
 **Text Generation**
-The Muse/Spark model receives a complex prompt and produces a structured response. No epistemic instructions (requests for verification, sources, stages, etc.) are provided.
+The Muse/Spark model receives a complex, highly structured academic prompt.
+Although the prompt includes formal instructions (sections, phases, references, diagrams), it does not provide any explicit epistemic‑verification mechanism: the model is not instructed to check the truth of claims, validate sources, or perform factual grounding.
+The constraints are stylistic and structural, not epistemic.
 
-**External Validation**
-The generated text is sent to MarCognity-AI. An epistemic analysis protocol is applied based on:
-- Identification of claims
-- Assessment of their verifiability
-- Detection of omissions
-- Classification of epistemic fractures
-- Production of a structured report (CLAIM → STATUS → REASON)
+External Validation  
+-The generated text is sent to MarCognity‑AI. An epistemic analysis protocol is applied based on:
 
-**Analysis of Results**
-The analysis focuses on internal consistency, not medical content. No qualitative judgments are made about the models. The goal is to document the observed epistemic behavior.
+-Identification of claims
 
+-Assessment of their verifiability
+
+-Detection of omissions
+
+-Classification of epistemic fractures
+
+-Production of a structured report (CLAIM → STATUS → REASON)
+
+Analysis of Results  
+The analysis focuses on internal consistency, not medical content.
+No qualitative judgments are made about the models.
+The goal is to document the observed epistemic behavior.
 ---
 
 ### 5. Results
