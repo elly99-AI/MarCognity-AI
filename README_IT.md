@@ -225,13 +225,6 @@ MarCognity-AI offre due modalità di esecuzione:
 1. **Notebook basato su Groq** (`marcognity_demo.ipynb`)  
    - Richiede una Groq API key  
    - Inference ultra-rapida
-
-2. **Notebook locale** (`marcognity_hf_demo.ipynb`)  
-   - Esecuzione completamente locale con modelli GGUF  
-   - Ideale per uso offline  
-
-Il framework è model-agnostic: il modello di ragionamento può essere sostituito con qualsiasi modello compatibile GGUF.
-
 ---
 
 ## Integrated AI Models
