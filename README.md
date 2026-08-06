@@ -206,16 +206,29 @@ The official version of the code and the full research paper have been permanent
 **Output:** Response + sources + semantic score + conceptual diagram
 
 ### Epistemic Verification Example
-Input: “Explain quantum entanglement.”
-Output:
+QUESTION
+Explain quantum entanglement.
 
-Generated response
+RESPONSE 
+Quantum entanglement is a correlation between particles regardless of distance. Einstein called it “spooky action at a distance.” Aspect’s 1982 experiments confirmed violations of Bell’s inequalities.
 
-Claim-by-claim verification
+Epistemic Verification
+Claim 1
+State: CONSISTENT WITH GENERAL KNOWLEDGE
+Rationale: Plausible, not verifiable in the documents.
 
-VERIFIED / EPISTEMIC FAILURE report
+Claim 2
+State: CONSISTENT WITH GENERAL KNOWLEDGE
+Reason: Attribution noted but not verifiable in the DOCUMENTS.
 
-Reasoning based on provided sources
+Claim 3
+State: NOT VERIFIABLE
+Reason: Specific citation (author + year) not present in the DOCUMENTS.
+
+Reasoning Based on Provided Sources
+The DOCUMENTS do not contain relevant material → no DOCUMENT-VERIFIED claim.
+General claims → CONSISTENT WITH GENERAL KNOWLEDGE.
+Claim lacking citations → NOT VERIFIABLE.
 
 --- 
 ### Quick Demo
