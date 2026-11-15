@@ -184,7 +184,7 @@ Il Test di stress per l'integrità epistemica è un protocollo indipendente prog
 La versione ufficiale del codice e il paper completo sono archiviati permanentemente su Zenodo.
 
 **MarCognity-AI — DOI**  
-Permanent DOI: https://doi.org/10.5281/zenodo.21825761
+Permanent DOI: https://doi.org/10.5281/zenodo.24245657
 Access: Full Research Paper (PDF) & Code (Zenodo)
 
 ---
@@ -196,12 +196,34 @@ Access: Full Research Paper (PDF) & Code (Zenodo)
 **Output:** Risposta + fonti + punteggio semantico + diagramma concettuale
 
 ### Epistemic Verification Example
-**Input:** “Spiega l’entanglement quantistico.”  
-**Output:**  
-- Risposta generata  
-- Verifica claim-by-claim  
-- Report VERIFIED / EPISTEMIC FAILURE  
-- Motivazione basata sulle fonti  
+
+DOMANDA:
+
+Spiega l'entanglement quantistico.
+
+RISPOSTA:
+
+L'entanglement quantistico è una correlazione tra particelle, indipendentemente dalla distanza. Einstein lo definì "spettrale azione a distanza". Gli esperimenti di Aspect del 1982 hanno confermato la violazione delle disuguaglianze di Bell.
+
+RAPPORTO DELL'AGENTE SCETTICO:
+
+Affermazione 1: "L'entanglement quantistico è una correlazione tra particelle, indipendentemente dalla distanza."
+
+Stato epistemico: COERENTE CON LE CONOSCENZE GENERALI
+
+Livello di rischio: Basso
+
+Motivazione: Plausibile e scientificamente accurata, ma non verificabile utilizzando i DOCUMENTI forniti.
+
+Segnalazioni metodologiche: Nessuna
+
+Riepilogo del processo:
+
+Affermazioni verificate tramite documenti: 0 (a causa del rigoroso rispetto del principio di "località epistemica", dato che i DOCUMENTI non contengono materiale pertinente).
+
+Campo "Fonte": Omesso per tutte le affermazioni, al fine di evitare attribuzioni esterne o inventate.
+
+Valutazione complessiva: La risposta si basa interamente su conoscenze generali; in assenza di documenti di supporto, nessuna affermazione ottiene lo status di "verificata tramite documenti".
 
 ---
 
