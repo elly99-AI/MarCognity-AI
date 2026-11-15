@@ -192,10 +192,10 @@ The Epistemic Integrity Stress Test is an independent protocol designed to evalu
 
 The official version of the code and the full research paper have been permanently archived on Zenodo and are citable using their Digital Object Identifier (DOI).
 
-| **MarCognity-AI** | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17855185.svg)](https://doi.org/10.5281/zenodo.21825761) |
+| **MarCognity-AI** | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17855185.svg)](https://doi.org/10.5281/zenodo.24245657) |
 |---|---|
-| **Permanent DOI** | `https://doi.org/10.5281/zenodo.21825761` |
-| **Access Publication** | [Full Research Paper (PDF) & Code (Zenodo)](https://doi.org/10.5281/zenodo.21825761) |
+| **Permanent DOI** | `https://doi.org/10.5281/zenodo.24245657` |
+| **Access Publication** | [Full Research Paper (PDF) & Code (Zenodo)](https://doi.org/10.5281/zenodo.24245657) |
 
 ---
 
@@ -205,30 +205,28 @@ The official version of the code and the full research paper have been permanent
 **Input:** “Explain the role of chaperone proteins.”  
 **Output:** Response + sources + semantic score + conceptual diagram
 
-### Epistemic Verification Example
-QUESTION
-Explain quantum entanglement.
+RESPONSE:
 
-RESPONSE 
 Quantum entanglement is a correlation between particles regardless of distance. Einstein called it “spooky action at a distance.” Aspect’s 1982 experiments confirmed violations of Bell’s inequalities.
 
-Epistemic Verification
-Claim 1
-State: CONSISTENT WITH GENERAL KNOWLEDGE
-Rationale: Plausible, not verifiable in the documents.
+SKEPTICAL AGENT REPORT:
 
-Claim 2
-State: CONSISTENT WITH GENERAL KNOWLEDGE
-Reason: Attribution noted but not verifiable in the DOCUMENTS.
+Claim 1: “Quantum entanglement is a correlation between particles regardless of distance.”
 
-Claim 3
-State: NOT VERIFIABLE
-Reason: Specific citation (author + year) not present in the DOCUMENTS.
+Epistemic State: CONSISTENT WITH GENERAL KNOWLEDGE
 
-Reasoning Based on Provided Sources
-The DOCUMENTS do not contain relevant material → no DOCUMENT-VERIFIED claim.
-General claims → CONSISTENT WITH GENERAL KNOWLEDGE.
-Claim lacking citations → NOT VERIFIABLE.
+Risk Level: Low
+
+Rationale: Plausible and scientifically accurate, but not verifiable using the provided DOCUMENTS.
+
+Methodological Flags: None
+
+Pipeline Summary:
+
+Document-Verified Claims: 0 (due to strict adherence to Epistemic Locality, since the DOCUMENTS contain no relevant material).
+
+Source Field: Omitted for all claims to prevent external or fabricated attributions.
+Overall Assessment: The response relies entirely on general knowledge; without supporting documents, no claim achieves DOCUMENT-VERIFIED status.
 
 --- 
 ### Quick Demo
