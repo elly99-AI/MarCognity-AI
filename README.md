@@ -205,6 +205,7 @@ The official version of the code and the full research paper have been permanent
 **Input:** “Explain the role of chaperone proteins.”  
 **Output:** Response + sources + semantic score + conceptual diagram
 
+## Epistemic Verification Example
 RESPONSE:
 
 Quantum entanglement is a correlation between particles regardless of distance. Einstein called it “spooky action at a distance.” Aspect’s 1982 experiments confirmed violations of Bell’s inequalities.
